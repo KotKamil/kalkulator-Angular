@@ -2,21 +2,7 @@
 	<div class="kalkulator">
 		<input type="text" class="kalkulator__panel" [(ngModel)]="panelValue">
 		<button class="kalkulator__button" (click)="wyczysc()">C</button>
-		<button class="kalkulator__button" (click)="wstaw('9')">9</button>
-		<button class="kalkulator__button" (click)="wstaw('8')">8</button>
-		<button class="kalkulator__button" (click)="wstaw('7')">7</button>
-		<button class="kalkulator__button" (click)="wstaw('+')">+</button>
-		<button class="kalkulator__button" (click)="wstaw('6')">6</button>
-		<button class="kalkulator__button" (click)="wstaw('5')">5</button>
-		<button class="kalkulator__button" (click)="wstaw('4')">4</button>
-		<button class="kalkulator__button" (click)="wstaw('-')">-</button>
-		<button class="kalkulator__button" (click)="wstaw('3')">3</button>
-		<button class="kalkulator__button" (click)="wstaw('2')">2</button>
-		<button class="kalkulator__button" (click)="wstaw('1')">1</button>
-		<button class="kalkulator__button" (click)="wstaw('*')">*</button>
-		<button class="kalkulator__button" (click)="wstaw('.')">,</button>
-		<button class="kalkulator__button" (click)="wstaw('0')">0</button>
+		<input type="button" class="kalkulator__button" *ngFor="let v of elementsValues" [value]="v" (click)="wstaw(v)">
 		<button class="kalkulator__button" (click)="oblicz()">=</button>
-		<button class="kalkulator__button" (click)="wstaw('/')">/</button>
 	</div>
 </main>
