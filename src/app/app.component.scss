@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.kalkulator {
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__panel {
+        height: 100px;
+        width: 300px;
+        font-size: 1.3rem;
+    }
+
+    &__button {
+        height: 100px;
+        width: 100px;
+        background-color: rgb(88, 255, 213);
+        font-size: 1.5rem;
+        color: rgb(16, 59, 48);
+        border: none;
+
+        &:hover {
+            background-color: rgba(88, 233, 214, 0.455);
+        }
+    }
+}
